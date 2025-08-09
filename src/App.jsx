@@ -5,9 +5,10 @@ import Home from './Screen/Home'
 import Navbar from './Components/Navbar'
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+
+function App() {
+  
   return (
     <>
       <div className=''>

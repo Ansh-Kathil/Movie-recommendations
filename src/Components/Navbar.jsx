@@ -4,8 +4,15 @@ import logo from './../assets/Images/logo.png'
 import { IoChevronDownOutline } from "react-icons/io5";
 import { IoSearchCircleOutline } from "react-icons/io5";
 import { IoChevronUpOutline } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+
+
+    const navigate = useNavigate();
+    const gohome = () => {
+          navigate(`/`);
+      };
 
   const [toggle, settoggle] = useState(false)
   const menu = [
@@ -21,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div className=' flex z-30 justify-between items-center p-4 px-10 absolute w-full bg-gradient-to-b from-[#1e2126] to-transparent'>
-      <img src={logo} className='w-[65px]' alt="logo" />
+      <img onClick={()=>gohome()} src={logo} className='w-[65px]' alt="logo" />
       <ul className=' hidden md:flex gap-8'>
         {menu.map((item, index) => (
           <li key={index} className={`text-gray-400 text-[18px] font-medium cursor-pointer hover:bg-gray-700 hover:text-white p-3 whitespace-nowrap  ${item.id==1?"bg-gray-700 text-white":null} rounded-md transition-all duration-500 ease-in-out`}>{item.name}</li>
