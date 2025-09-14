@@ -22,7 +22,7 @@ const Hero = () => {
             <div className='absolute h-[100vh] bg-gradient-to-t via-transparent from-[#1a1a1a] to-transparent w-full'></div>
 
             <div className='absolute bottom-20  px-10 md:px-24'>
-                <h2 className='text-white text-[19px] lg:text-[27px]'>Watch only on HULU</h2>
+                <h2 className='text-white text-[19px] lg:text-[27px]'>Get Latest Movie info</h2>
                 <h2 className='text-white text-[36px] lg:text-[47px] font-bold'>{movie.original_title}</h2>
                 <div className='flex gap-5 mt-5'>
                     <button className='bg-white text-black'>PLAY</button>
